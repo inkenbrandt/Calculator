@@ -190,8 +190,16 @@ def normalize_unit(chemical, unit, current_amount):
     elif chemical == 'nitrite as n' and unit == 'mg/l as n':
         return current_amount * 3.284535258, \
             milli_per_liter, 'Nitrite'
-    elif chemical == 'nitrate-nitrogen' and unit == milli_per_liter:
+#SDWIS ONLY
+    elif chemical == 'nitrate' and unit == 'mg/l as n':
         return current_amount * 4.426802887, \
+            milli_per_liter, 'Nitrate'
+#SDWIS ONLY
+    elif chemical == 'nitrite' and unit == 'mg/l as n':
+        return current_amount * 3.284535258, \
+            milli_per_liter, 'Nitrite'  
+    elif chemical == 'nitrite-nitrogen' and unit == milli_per_liter:
+        return current_amount * 3.284535258, \
             milli_per_liter, 'Nitrite'
     elif chemical == 'nitrate as n' and unit == milli_per_liter:
         return current_amount * 4.426802887, \

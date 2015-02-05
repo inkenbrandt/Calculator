@@ -21,5 +21,5 @@ def shortdict(param):
     'sodium':'Na', 'sodium plus potassium':'NaK', \
     'bicarbonate':'HCO3', 'carbonate':'CO3', 'chloride':'Cl', \
     'silica':'Si','fluoride':'F', 'total hardness':'Hard', \
-    'hardness, non-carbonate':'Hard', }
+    'hardness, non-carbonate':'Hard', 'alkalinity, total':'Meas_Alk' }
     return chemdict.get(param)    
